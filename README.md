@@ -50,7 +50,7 @@ To get started with Harvestify locally, follow these steps:
 
 ## Deployment on Microsoft Azure
 
-Harvestify is also hosted on Microsoft Azure. You can access the live application [here](https://your-azure-app-url).
+Harvestify is also hosted on Microsoft Azure. You can access the live application [here](https://salmon-river-0feb8641e.5.azurestaticapps.net/).
 
 To deploy the application to Azure, follow these steps:
 
