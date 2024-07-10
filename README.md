@@ -89,9 +89,7 @@ Harvestify-AI-Powered-Plant-Health-Assistant/
 │   └── ...
 │
 └── README.md
-
-
-
+```
 ## Contributing
 
 We welcome contributions to Harvestify! To contribute:
