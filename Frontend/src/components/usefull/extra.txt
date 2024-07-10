@@ -1,0 +1,88 @@
+<dialog open>
+  <Card
+    style={{
+      backgroundColor: "#4A9900",
+      paddingInline: "10%",
+      paddingBlock: "20%",
+      borderRadius: 20,
+      borderColor: "transparent",
+      boxShadow: "5px",
+    }}
+  >
+    <p>This is your pop-up content.</p>
+    {/* <button onClick={handleCloseModal}>Cancel</button> */}
+    <Box
+      sx={{
+        border: "10px dashed #ccc",
+        borderRadius: "15px",
+        padding: "20px",
+        textAlign: "center",
+        position: "relative",
+        overflow: "hidden",
+        "&:hover img": {
+          transform: "scale(1.1)",
+        },
+        backgroundColor: "white",
+      }}
+    >
+      <input
+        accept="image/*"
+        id="image-upload"
+        type="file"
+        onChange={handleFileChange}
+        style={{ display: "none" }}
+      />
+      <label htmlFor="image-upload">
+        {!imageUrl && (
+          <Button
+            variant="contained"
+            component="span"
+            startIcon={<CloudUploadIcon />}
+            style={{ marginBlock: "5rem" }}
+          >
+            Upload Image
+          </Button>
+        )}
+      </label>
+      {!selectedFile && (
+        <Typography variant="body2" mt={2}>
+          {selectedFile ? selectedFile : "No file selected"}
+        </Typography>
+      )}
+      {imageUrl && (
+        <>
+          <div
+            style={{
+              display: "grid",
+              alignContent: "center",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src={imageUrl}
+              alt="Uploaded"
+              style={{
+                maxWidth: "100%",
+                maxHeight: "200px",
+                transition: "transform 0.3s ease-in-out",
+              }}
+            />
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => formik.handleSubmit()}
+              disabled={!selectedFile}
+              style={{
+                width: "100%",
+                marginTop: "10%",
+              }}
+            >
+              Upload
+            </Button>
+          </div>
+        </>
+      )}
+    </Box>
+  </Card>
+</dialog>;

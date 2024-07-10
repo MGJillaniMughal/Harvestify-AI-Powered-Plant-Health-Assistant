@@ -1,0 +1,23 @@
+/* styles.css */
+.navbar-custom {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-scrolled {
+  background-color: rgb(37, 85, 42);
+}
+
+.navbar-custom .nav-link {
+  color: white;
+  font-size: 1.25rem; /* Adjust the font size as needed */
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 30px;
+  background-color: rgb(122, 173, 104);
+  color: white;
+  font-weight: 500;
+}

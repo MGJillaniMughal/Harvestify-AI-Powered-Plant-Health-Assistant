@@ -1,0 +1,13 @@
+/* src/components/Footer.css */
+
+.bg-soft-green {
+  background-color: #8fbc8f; /* Soft green color */
+}
+
+.footer-link {
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
