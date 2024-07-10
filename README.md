@@ -1,6 +1,6 @@
 # Harvestify: AI-Powered Plant Health Assistant
 
-![Harvestify Banner](Web App Interface.png)
+![Harvestify Banner](/Web%20App%20Interface.png)
 
 ## Introduction
 
